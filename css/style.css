@@ -1,6 +1,9 @@
 @import url(./theme.css);
 @import url(./fonts.css);
-@import url(./navbar.css);
+@import url(./header.css);
+@import url(./container.css);
+@import url(./footer.css);
+@import url(./animations.css);
 
 html, body {
     height: 100%;
@@ -12,6 +15,7 @@ body {
 }
 
 .layout {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
