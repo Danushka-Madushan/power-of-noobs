@@ -1,23 +1,39 @@
 const dynamicText = document.querySelector('.op-changeing')
 
-const contents = [
-    'Awesome',
-    'Reliable',
-    'Smart',
-    'Perfect',
-    'The Best of The Best',
-]
-
-let index = 1
-
-const animate = () => {
-    dynamicText.classList.remove('w3-animate-right')
-    dynamicText.classList.add('w3-animate-left')
+const contents = {
+    'items' : [
+        'IT Solutions',
+        'Front-end Design',
+        'Back-end Design',
+        'Scripting',
+        'Ui/Ux Design',
+        'API Design/Develop',
+    ],
+    'index' : 1,
 }
 
-const animateback = () => {
-    dynamicText.classList.remove('w3-animate-left')
-    dynamicText.classList.add('w3-animate-right')
-    dynamicText.innerText = contents[index]
-    index == 4 ? index = 0 : index ++
+const setDynamicText = (state) => {
+    if (state) {
+        dynamicText.classList.remove('w3-animate-right')
+        dynamicText.classList.add('w3-animate-left')
+    } else {
+        dynamicText.classList.remove('w3-animate-left')
+        dynamicText.classList.add('w3-animate-right')
+        dynamicText.innerText = contents.items[contents.index]
+        contents.index == contents.items.length - 1 ? contents.index = 0 : contents.index ++
+    }
 }
+
+dynamicText.addEventListener("animationend", (event) => {
+    if (event.animationName == 'animateleft') {
+        setDynamicText(false)
+    } else {
+        setTimeout(() => {
+            setDynamicText(true)
+        }, 1500)
+    }
+}, false);
+
+$(document).ready(() => {
+    setDynamicText(true)
+});
