@@ -1,0 +1,69 @@
+.w3-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-left {
+    position: relative;
+    animation: animateleft 0.4s;
+    opacity: 0;
+}
+
+@keyframes animateleft {
+    from {
+        left: 0;
+        opacity: 1
+    }
+
+    to {
+        left: -100px;
+        opacity: 0
+    }
+}
+
+.w3-animate-right {
+    position: relative;
+    animation: animateright 0.4s;
+    opacity: 1;
+}
+
+@keyframes animateright {
+    from {
+        right: -100px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.w3-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
