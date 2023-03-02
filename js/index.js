@@ -1,8 +1,10 @@
+const account = document.querySelector('.u-name')
 const staticText = document.querySelector('.op-con')
 const dynamicText = document.querySelector('.op-changeing')
 
 const contents = {
     'items' : [
+        'Power Of Noobs',
         'Ui/Ux Design',
         'Front-end Design',
         'Back-end Design',
@@ -20,7 +22,11 @@ const setDynamicText = (state) => {
     } else {
         dynamicText.classList.remove('w3-animate-left')
         dynamicText.classList.add('w3-animate-right')
-
+        if (contents.index != 0) {
+            staticText.innerText = 'We Do'
+        } else {
+            staticText.innerText = 'We Are'
+        }
         dynamicText.innerText = contents.items[contents.index]
         contents.index == contents.items.length - 1 ? contents.index = 0 : contents.index ++
     }
@@ -36,7 +42,12 @@ dynamicText.addEventListener("animationend", (event) => {
     }
 }, false);
 
+account.onclick = () => {
+    account.innerText = 'Admin'
+}
+
 $(document).ready(() => {
-    
-    setDynamicText(true)
+    setTimeout(() => {
+        setDynamicText(true)
+    }, 1500)
 });
