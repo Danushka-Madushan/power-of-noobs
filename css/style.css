@@ -1,10 +1,11 @@
 @import url(./theme.css);
 @import url(./fonts.css);
-@import url(./header.css);
-@import url(./sections.css);
-@import url(./footer.css);
-@import url(./waves.css);
-@import url(./animations.css);
+@import url(./header/header.css);
+@import url(./footer/footer.css);
+@import url(./sections/sections.css);
+@import url(./sections/waves.css);
+@import url(./sections/animations.css);
+
 
 html,
 body {
