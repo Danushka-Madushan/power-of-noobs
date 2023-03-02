@@ -1,0 +1,32 @@
+@import url(./theme.css);
+@import url(./fonts.css);
+@import url(./header/header.css);
+@import url(./footer/footer.css);
+@import url(./sections/sections.css);
+@import url(./sections/waves.css);
+@import url(./sections/animations.css);
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-black);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    position: relative;
+    padding-top: 100px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
