@@ -64,5 +64,5 @@ staticText.addEventListener('animationend', (event) => {
 $(document).ready(() => {
     setTimeout(() => {
         setDynamicText(true)
-    }, contents.countdown)
+    }, contents.countdown + 200)
 });
