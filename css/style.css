@@ -5,7 +5,7 @@
 @import url(./sections/sections.css);
 @import url(./sections/waves.css);
 @import url(./sections/animations.css);
-
+@import url(../assets/util/bootstrap-icons.css);
 
 html,
 body {
