@@ -1,0 +1,15 @@
+.wave {
+    aspect-ratio: 960/360;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.upper-layer-1 {
+    background-image: url(../assets/layered-waves-1.svg);
+}
+
+.upper-layer-2 {
+    background-image: url(../assets/layered-waves-2.svg);
+}
