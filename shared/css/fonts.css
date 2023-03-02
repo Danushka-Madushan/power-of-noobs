@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Evogria';
-    src: url(../../assets/fonts/Evogria.otf);
+    src: url(../../assets/fonts/Evogria.woff) format('woff');
 }
 
 @font-face {
     font-family: 'Evogria-Italic';
-    src: url(../../assets/fonts/Evogria-Italic.otf);
+    src: url(../../assets/fonts/Evogria-Italic.woff) format('woff');
 }
