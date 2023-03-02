@@ -1,11 +1,13 @@
 @import url(./theme.css);
 @import url(./fonts.css);
 @import url(./header.css);
-@import url(./opening-section.css);
+@import url(./sections.css);
 @import url(./footer.css);
+@import url(./waves.css);
 @import url(./animations.css);
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -14,9 +16,17 @@ body {
     background-color: var(--bg-black);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    position: relative;
+    padding-top: 100px;
+}
+
 .layout {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
