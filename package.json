@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "deploy": "firebase deploy --only hosting firebase deploy --token \"$FIREBASE_TOKEN\"",
     "build": "firebase deploy --only hosting",
     "dev": "firebase serve"
   },
