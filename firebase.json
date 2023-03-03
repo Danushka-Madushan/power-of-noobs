@@ -1,0 +1,22 @@
+{
+  "hosting": [
+    {
+      "target": "home",
+      "public": "public/page",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "dashboard",
+      "public": "public/dashboard",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}

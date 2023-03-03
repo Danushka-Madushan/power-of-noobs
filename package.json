@@ -1,0 +1,23 @@
+{
+  "name": "power-of-noobs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "firebase deploy --only hosting",
+    "dev": "firebase serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danushka-Madushan/power-of-noobs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danushka-Madushan/power-of-noobs/issues"
+  },
+  "homepage": "https://github.com/Danushka-Madushan/power-of-noobs#readme",
+  "dependencies": {
+    "firebase": "^9.17.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "multi-theft-auto-4ae28"
+  },
+  "targets": {
+    "multi-theft-auto-4ae28": {
+      "hosting": {
+        "home": [
+          "multi-theft-auto-4ae28"
+        ],
+        "dashboard": [
+          "portcity-dashboard"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
