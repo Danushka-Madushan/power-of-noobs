@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Danushka-Madushan/power-of-noobs#readme",
   "dependencies": {
-    "firebase": "^9.17.2"
+    "firebase": "^9.17.2",
+    "firebase-tools": "^11.24.0"
   }
 }
